@@ -21,7 +21,7 @@ async function makeCommits(n, batchSize = 1000) {
     counter++;
 
     
-    const date = getRandomDate("2014-10-14", "2025-11-10");
+    const date = getRandomDate("2024-10-14", "2025-11-10");
 
     const data = { date };
     await jsonfile.writeFile(path, data);
@@ -42,4 +42,4 @@ async function makeCommits(n, batchSize = 1000) {
   console.log("All commits done!");
 }
 
-makeCommits(16135);
+makeCommits(1135);
